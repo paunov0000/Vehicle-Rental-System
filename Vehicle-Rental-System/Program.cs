@@ -1,8 +1,10 @@
-﻿string vehicleBrand = Console.ReadLine()!;
+﻿using Vehicle_Rental_System;
+
+string vehicleBrand = Console.ReadLine()!;
 string vehicleModel = Console.ReadLine()!;
 decimal vehicleValue = decimal.Parse(Console.ReadLine()!);
 string vehicleType = Console.ReadLine()!;
-Vehicle vehicle;
+IVehicle vehicle;
 switch (vehicleType)
 {
     case "car":
