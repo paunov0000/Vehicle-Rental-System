@@ -20,7 +20,9 @@ switch (vehicleType)
         vehicle = new CargoVan(vehicleBrand, vehicleModel, vehicleValue, driverExperience);
         break;
     default:
-        break;
+        Console.WriteLine("Invalid vehicle type");
+        return;
+        //vehicle = new Invalide or write a line wVehicleType();      //Either just write an error message to the console and exit the app or make a class which implements IVehicle to display an error when calling CalculateRentalPrice?
 }
 
 int rentalPeriod = int.Parse(Console.ReadLine()!);
