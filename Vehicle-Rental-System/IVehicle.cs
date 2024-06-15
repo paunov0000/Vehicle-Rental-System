@@ -8,9 +8,6 @@ namespace Vehicle_Rental_System
 {
     internal interface IVehicle
     {
-        public string Brand { get; set; }
-        public string Model { get; set; }
-        public decimal Value { get; set; }
-        public string CalculateRentalPrice(int rentalPeriod);
+        public string CalculateRentalPrice(int rentalPeriod, string customerFirstName, string customerLastName);
     }
 }
